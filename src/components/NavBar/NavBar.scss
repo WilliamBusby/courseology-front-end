@@ -1,0 +1,15 @@
+@use "./../../assets/variables" as *;
+
+.navbar {
+  background-color: $purple;
+  height: 60px;
+  width: 100vw;
+  overflow: hidden;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  
+  h2 {
+    color: $white;
+  }
+}
