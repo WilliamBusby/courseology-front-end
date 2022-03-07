@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import "./Button.scss";
 
-const Button = () => {
+const Button = (props) => {
+
+  const { buttonText, buttonFunction } = props;
+
   return (
-    <div>Button</div>
+    <div>
+      <button className="button" onClick={buttonFunction}>{buttonText}</button>
+    </div>
   )
 }
 

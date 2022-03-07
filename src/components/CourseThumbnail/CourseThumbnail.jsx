@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import "./CourseThumbnail.scss";
 
-const CourseThumbnail = () => {
+const CourseThumbnail = (props) => {
+
+  const {course} = props;
+
   return (
-    <div>CourseThumbnail</div>
+    <div className="course-thumbnail">
+      {course.name}
+    </div>
   )
 }
 

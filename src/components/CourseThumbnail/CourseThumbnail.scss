@@ -1,0 +1,8 @@
+@use "./../../assets/variables" as *;
+
+.course-thumbnail {
+  width: 240px;
+  height: 180px;
+  background-color: $grey;
+  color: $purple;
+}

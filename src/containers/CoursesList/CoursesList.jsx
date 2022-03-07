@@ -1,8 +1,24 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react';
+import CourseThumbnail from '../../components/CourseThumbnail/CourseThumbnail';
+import "./CoursesList.scss";
 
-const CoursesList = () => {
+const CoursesList = (props) => {
+
+  const { coursesArr } = props;
+
+  const [showEmpty, setShowEmpty] = useState(false);
+
+  const coursesComponents = coursesArr.map((course, index) => <CourseThumbnail course={course} key={index} />);
+
+  useEffect(() => setShowEmpty(coursesArr.length === 0), [coursesArr]);
+
+  const emptyListText = <p>There don't seem to be any matches for your search!</p>
+
   return (
-    <div>CoursesList</div>
+    <div className="courses-list">
+      {!showEmpty && coursesComponents}
+      {showEmpty && emptyListText}
+    </div>
   )
 }
 
