@@ -1,0 +1,40 @@
+@use "./../../assets/variables" as *;
+
+.course-info-card {
+  width: 100%;
+  margin-top: 40px;
+  text-align: center;
+
+  &__name {
+    height: 40px;
+    font-size: 30px;
+    color: $purple;
+    font-weight: 600;
+  }
+
+  &__info {
+    background-color: $grey;
+    width: 50%;
+    margin: 40px auto;
+    padding: 40px;
+    padding-top: 80px;
+  }
+
+  &__split {
+    display: grid;
+    grid-template-columns: 0.75fr 2fr;
+    column-gap: 60px;
+  }
+
+  &__header {
+    text-align: right;
+    font-size: 24px;
+    color: $purple;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    text-align: left;
+  }
+}

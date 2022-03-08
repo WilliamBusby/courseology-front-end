@@ -4,5 +4,16 @@
   width: 240px;
   height: 180px;
   background-color: $grey;
-  color: $purple;
+  text-align: center;
+  position: relative;
+
+  &__name {
+    color: $purple;
+    position: absolute;
+    bottom: 20px;
+    width: 98%;
+    margin-left: 1%;
+    font-size: 20px;
+    font-weight: 600;
+  }
 }

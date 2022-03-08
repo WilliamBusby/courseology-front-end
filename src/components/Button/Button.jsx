@@ -3,12 +3,14 @@ import "./Button.scss";
 
 const Button = (props) => {
 
-  const { buttonText, buttonFunction } = props;
+  const { buttonText } = props;
+
+  const preventDefault = (event) => {
+    event.preventDefault();
+  }
 
   return (
-    <div>
-      <button className="button" onClick={buttonFunction}>{buttonText}</button>
-    </div>
+    <button className="button" onClick={preventDefault}>{buttonText}</button>
   )
 }
 

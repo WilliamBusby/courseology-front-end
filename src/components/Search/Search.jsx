@@ -1,10 +1,13 @@
 import React from 'react';
 import "./Search.scss";
 
-const Search = () => {
+const Search = (props) => {
+
+  const {searchFunction} = props;
+
   return (
     <div className="search-box">
-      <input type="text" />  
+      <input type="text" onchange={searchFunction} />  
     </div>
   )
 }
