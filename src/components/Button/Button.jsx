@@ -3,10 +3,10 @@ import "./Button.scss";
 
 const Button = (props) => {
 
-  const { buttonText, type } = props;
+  const { buttonText, type, buttonFunction } = props;
 
   return (
-    <button className="button" type={type} >{buttonText}</button>
+    <button className="button" type={type} onClick={buttonFunction} >{buttonText}</button>
   )
 }
 

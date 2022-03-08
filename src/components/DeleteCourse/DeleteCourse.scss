@@ -1,0 +1,30 @@
+@use "./../../assets/variables" as *;
+
+.delete-course {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  &__label {
+    font-size: 20px;
+    color: $purple;
+    font-weight: 600;
+  }
+
+  textarea {
+    padding: 5px;
+    border: none;
+    background-color: $grey;
+  }
+
+  select {
+    width: 200px;
+    height: 20px;
+    border: none;
+    background-color: $grey;
+  }
+}

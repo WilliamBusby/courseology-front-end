@@ -31,7 +31,7 @@ function App() {
         <Route path="/" element={<Main coursesArr={courses} setNameSearch={setNameSearch} />} />
         <Route path="/courses/:courseId" element={<CourseInfo />} />
         <Route path="/course/add" element={<AddCourse />} />
-        <Route path="/course/delete" element={<DeleteCourse />} />
+        <Route path="/course/delete" element={<DeleteCourse courseList={courses}/>} />
       </Routes>
     </div>
     </Router>

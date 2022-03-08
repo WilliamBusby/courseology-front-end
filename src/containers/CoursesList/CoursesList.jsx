@@ -12,7 +12,7 @@ const CoursesList = (props) => {
 
   useEffect(() => setShowEmpty(coursesArr.length === 0), [coursesArr]);
 
-  const emptyListText = <p>There don't seem to be any matches for your search!</p>
+  const emptyListText = <p className="empty-text">There don't seem to be any matches for your search!</p>
 
   return (
     <div className="courses-list">

@@ -7,7 +7,7 @@ const Search = (props) => {
 
   return (
     <div className="search-box">
-      <input type="text" onChange={searchFunction} />  
+      <input type="text" onChange={searchFunction} placeholder="Search by name..." />  
     </div>
   )
 }
