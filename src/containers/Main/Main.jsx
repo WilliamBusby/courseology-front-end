@@ -5,10 +5,10 @@ import "./Main.scss";
 
 const Main = (props) => {
 
-  const { coursesArr } = props;
+  const { coursesArr, setNameSearch } = props;
 
-  const handleChangeCourses = () => {
-    
+  const handleChangeCourses = (event) => {
+    setNameSearch(event.target.value);
   }
 
   return (

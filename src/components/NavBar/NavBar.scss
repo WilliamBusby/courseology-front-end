@@ -8,8 +8,26 @@
   padding-left: 20px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-right: 80px;
+
+  &__links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+  }
+
+  a:active {
+    text-decoration: none;
+  }
   
   h2 {
     color: $white;
+  }
+
+  h4 {
+    color: $white;
+    text-decoration: none;
   }
 }

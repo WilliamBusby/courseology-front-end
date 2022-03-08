@@ -12,4 +12,8 @@
   &:hover {
     cursor: pointer;
   }
+
+  &:active {
+    background-color: $grey;
+  }
 }

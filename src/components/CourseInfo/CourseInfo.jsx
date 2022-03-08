@@ -9,7 +9,7 @@ const CourseInfo = () => {
   const [course, setCourse] = useState({});
 
   const getCourse = (courseId) => {
-    fetch("http://localhost:8080/courses/" + courseId)
+    fetch("http://localhost:8080/course/" + courseId)
     .then(res => res.json())
     .then(json => setCourse(json))
     .catch(err => console.log(err));
@@ -37,7 +37,7 @@ const CourseInfo = () => {
         </div>
         <div className="course-info-card__split">
           <h3 className="course-info-card__header">Description:</h3> 
-          <h4 className="course-info-card__content">{course.description}</h4>
+          <h4 className="course-info-card__content">{course.summary}</h4>
         </div>
       </div>
       
